@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+section#coverimg {
+    width: 100%;
+    height: 100vh;
+    background: url(imagenes/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+div#logo {
+    float: left;
+    margin: 30 200;
+}
+
+div#menu {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li{
+    margin: 35 10;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a {
+    padding: 10 20;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+ul li a:hover,
+ul li a.fijo
+{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    height: 25px;
+    width: 45px;
+    transition: .9s;
+}
+
+section#aboutus {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+div.txtau {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    float: left;
+    margin: 0 50px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+}
+
+p {
+    float: right;
+    width: 800px;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    overflow: auto;
+}
+
+ul#discoscarrousel {
+    height: 60vh;
+    text-align: center;
+}
+
+ul#discoscarrousel li{
+    display: inline-block;
+    margin: 15 65;
+}
+
+ul#discoscarrousel li img {
+    filter: grayscale(1);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+ul#discoscarrousel li img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
